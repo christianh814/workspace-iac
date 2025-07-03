@@ -1,0 +1,24 @@
+{
+	"name": "devcontainer",
+	"image": "ghcr.io/christianh814/devcontainer:latest",
+
+	"features": {
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {
+			"enableNonRootDocker": "true",
+			"moby": "true"
+		}
+	},
+	
+	"hostRequirements": {
+		"cpus": 4
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"golang.Go",
+				"vscodevim.vim",
+				"redhat.vscode-yaml"
+			]
+		}
+	}
+}
